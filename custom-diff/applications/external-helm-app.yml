@@ -21,10 +21,10 @@ spec:
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
+      
   ignoreDifferences:
   - group: apps
-    kind: Secret
+    kind: Deployment
     jsonPointers:
-     - /data
-     - /stringData
+     - /metadata/annotations
    
