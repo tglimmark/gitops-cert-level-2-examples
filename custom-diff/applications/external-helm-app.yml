@@ -27,7 +27,7 @@ spec:
     kind: Deployment
     jsonPointers:
      - /metadata/annotations
-     
+  ignoreDifferences:   
   - group: *
     kind: Secret
     jsonPointer:
