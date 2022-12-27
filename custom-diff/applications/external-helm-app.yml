@@ -27,9 +27,10 @@ spec:
     kind: Deployment
     jsonPointers:
      - /metadata/annotations
-  ignoreDifferences:   
-  - group: *
+  - group: ""
     kind: Secret
     jsonPointer:
-     - /data
+     - /data/my-password
+    name: example-secret
+    namespace: example02
    
